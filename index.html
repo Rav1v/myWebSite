@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itay .k the Monkey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .photo-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .photo-gallery div {
+            flex-basis: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Itay .k the Monkey</h1>
+    </header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#about">About Itay .k</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the official website of Itay .k the Monkey! Here you can learn all about Itay .k, his adventures, and more.</p>
+        </section>
+        <section id="about">
+            <h2>About Itay .k</h2>
+            <p>Itay .k is a charming and adventurous monkey who loves exploring the jungle, making new friends, and having fun. Known for his intelligence and playful nature, Itay .k has become a beloved character among his peers.</p>
+            <p>Itay .k enjoys swinging from tree to tree, solving puzzles, and helping other animals in the jungle. His favorite food is bananas, and he has a knack for finding the ripest ones!</p>
+        </section>
+        <section id="photos">
+            <h2>Photos</h2>
+            <div class="photo-gallery">
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="Itay .k in the jungle">
+                    <p>Itay .k exploring the lush jungle, always on the lookout for new adventures and friends.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHpRPYjI2U_ozVYWjcCgyal4RR-ygEni255g&s" alt="Itay .k with friends">
+                    <p>Itay .k with his animal friends, enjoying a sunny day and playing games together.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTVIiUhHIT50fBttDfP85Ezb6ZJHJkHue1A&s" alt="Itay .k eating bananas">
+                    <p>Itay .k's favorite snack time - eating the ripest and sweetest bananas he can find.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <p>If you want to learn more about Itay .k or have any questions, feel free to contact us at <a href="mailto:info@itaykmonkey.com">info@itaykmonkey.com</a>. (BTW Itay is single and ready to mingle)</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Itay .k the Monkey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
